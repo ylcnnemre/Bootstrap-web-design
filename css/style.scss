@@ -1,0 +1,72 @@
+#hero{
+  
+ .container{
+     height: 50vh;
+ }
+}
+a{
+    text-decoration: none;
+}
+.darkbg{
+    background-image:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.9)),url("../img/main_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.col{
+    padding: 0 !important;
+}
+
+/* Latest Section */
+.generic{
+    padding: 100px 0;
+}
+#latest{
+
+    .latest-item{
+        position: relative;
+        img{
+
+            min-height: 100%;
+            width: 100%;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(189,61,75,.4);
+            
+            i{
+                display: inline-block;
+                transform: translateY(50px);
+                transition: .5s all;
+                opacity: 0;
+                font-size: 2rem;
+            }
+        }
+
+        &:hover{
+
+            .overlay{
+             transition: .5s all;
+              color: white;
+                background: rgba(189,61,75,.7);
+
+
+                i{
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    button{
+       max-height: 250px;
+       padding: 0;
+       overflow: hidden;
+
+    }
+}

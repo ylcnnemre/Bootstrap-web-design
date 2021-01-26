@@ -1,0 +1,40 @@
+.red{
+   
+    display: inline-block;
+   
+    
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: .5s all;
+}
+
+
+
+
+.blue{
+    
+    display: inline-block;
+   
+  
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: .5s all;
+}
+
+.collect{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.red:hover,.blue:hover{
+    
+   ~.blue{
+       color: red;
+   }
+    
+    
+}

@@ -1,0 +1,72 @@
+#hero .container {
+  height: 50vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.darkbg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url("../img/main_bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/main_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+/* Latest Section */
+.generic {
+  padding: 100px 0;
+}
+
+#latest .latest-item {
+  position: relative;
+}
+
+#latest .latest-item img {
+  min-height: 100%;
+  width: 100%;
+}
+
+#latest .latest-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 61, 75, 0.4);
+}
+
+#latest .latest-item .overlay i {
+  display: inline-block;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 0;
+  font-size: 2rem;
+}
+
+#latest .latest-item:hover .overlay {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  color: white;
+  background: rgba(189, 61, 75, 0.7);
+}
+
+#latest .latest-item:hover .overlay i {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#latest button {
+  max-height: 250px;
+  padding: 0;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
